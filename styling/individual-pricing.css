@@ -1,0 +1,113 @@
+ /* Custom styles for pricing page */
+ .pricing-container {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 50px;
+     flex-wrap: wrap;
+ }
+
+ .pricing-plan {
+     border: 1px solid #dee2e6;
+     border-radius: 10px;
+     padding: 20px;
+     text-align: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+     flex: 1;
+     /* Makes each plan take up available space */
+     min-width: 280px;
+     /* Ensures plans don't get too narrow on small screens */
+     max-width: 350px;
+     /* Optional: Set a max width for consistency */
+     margin-bottom: 20px;
+     /* Add spacing at the bottom */
+ }
+
+ .buy-button {
+     padding: 10px 20px;
+     border: none;
+     background-color: #007bff;
+     color: white;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     width: 100%;
+     max-width: 140px;
+     text-align: center;
+     display: inline-block;
+     text-decoration: none;
+     /* Remove underline */
+ }
+
+ .buy-button:hover {
+     background-color: #0056b3;
+     text-decoration: none;
+ }
+
+
+ .pricing-plan:hover {
+     transform: translateY(-5px);
+ }
+
+ .pricing-plan h2 {
+     font-size: 24px;
+     margin-bottom: 10px;
+     margin-top: 0px;
+ }
+
+ .pricing-plan p {
+     font-size: 16px;
+     color: #6c757d;
+     margin-bottom: 20px;
+ }
+
+ .pricing-plan button {
+     background-color: #007bff;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .pricing-plan button:hover {
+     background-color: #0056b3;
+ }
+
+ /* Register Form Styling */
+ .register-form-container {
+     margin-top: 30px;
+     display: none;
+     border: 1px solid #dee2e6;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .register-form-container h3 {
+     margin-bottom: 20px;
+ }
+
+ .register-form-container input {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 10px;
+     border: 1px solid #ced4da;
+     border-radius: 5px;
+ }
+
+ .register-form-container button {
+     background-color: #28a745;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+
+ .register-form-container button:hover {
+     background-color: #218838;
+ }

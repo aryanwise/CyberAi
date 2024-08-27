@@ -1,0 +1,316 @@
+/* Base styles (for desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-links li {
+        margin: 10px 0;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+}
+
+/* Responsive Design for the Caraousel*/
+@media (max-width: 768px) {
+    .service-container {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    .learnmore-button,
+    .buy-button {
+        width: 120px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .custom-arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .button-group {
+        max-width: 260px;
+        /* Adjust max-width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .service-container {
+        padding: 10px;
+        min-height: 200px;
+    }
+
+    .learnmore-button,
+    .buy-button {
+        width: 100px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        /* Stack buttons vertically on small screens */
+        gap: 10px;
+        max-width: none;
+        /* Remove max-width restriction */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .custom-arrow {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Container for the registration section */
+.service-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+    /* Space between the button and text */
+    font-size: 1rem;
+    /* Base font size */
+}
+
+/* Button and text inside the registration section */
+.register-btn {
+    font-size: 1rem;
+    /* Ensure button font size is appropriate */
+    padding: 10px 20px;
+}
+
+.service-line {
+    font-size: 1rem;
+    /* Match the text font size with button text */
+}
+
+/* Styling for the hidden service form */
+.service-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.service-form p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.service-form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button inside the service form */
+.service-form .btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+    .service-start {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-form {
+        padding: 15px;
+    }
+
+    .register-btn,
+    .service-line {
+        font-size: 1rem;
+        /* Adjust font size for tablets */
+    }
+
+    .service-form p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .service-start {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .service-form {
+        padding: 10px;
+    }
+
+    .register-btn,
+    .service-line {
+        font-size: 0.9rem;
+        /* Smaller font size for mobile */
+        padding: 8px 16px;
+    }
+
+    .service-form p {
+        font-size: 1rem;
+    }
+
+    .service-form input[type="checkbox"] {
+        transform: scale(0.9);
+        /* Smaller checkboxes */
+    }
+
+    .service-form .btn {
+        padding: 8px 16px;
+    }
+}
+
+/* services and pricing */
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .service-container {
+        padding: 15px;
+    }
+
+    .service-font {
+        font-size: 18px;
+        /* Slightly smaller font size for smaller screens */
+    }
+
+    .button-group {
+        flex-direction: column;
+        /* Stack buttons vertically on smaller screens */
+        width: 100%;
+    }
+
+    .learnmore-button,
+    .buy-button {
+        width: 100%;
+        /* Full width buttons on smaller screens */
+        margin-bottom: 10px;
+        /* Add margin to separate stacked buttons */
+    }
+}
+
+/* Responsive design for very small screens (like mobile phones) */
+@media (max-width: 480px) {
+    .service-container {
+        padding: 10px;
+    }
+
+    .service-font {
+        font-size: 16px;
+        /* Adjust font size for very small screens */
+    }
+
+    .learnmore-button,
+    .buy-button {
+        padding: 8px 16px;
+        /* Smaller padding for smaller screens */
+    }
+}
+
+/* service message*/
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .service-message {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .service-message h2 {
+        font-size: 24px;
+    }
+
+    .service-message p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-message {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .service-message h2 {
+        font-size: 22px;
+    }
+
+    .service-message p {
+        font-size: 14px;
+    }
+
+    .buy-button {
+        width: 100%;
+        /* Full-width button on small screens */
+        padding: 10px;
+    }
+}
+
+/* pricing plan  */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-plan {
+        max-width: 100%;
+        /* Expand to full width on small screens */
+        margin-bottom: 20px;
+    }
+
+    .buy-button {
+        width: 100%;
+        /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-plan h2 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .pricing-plan p {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .register-form-container {
+        padding: 15px;
+    }
+
+    .register-form-container input {
+        padding: 8px;
+    }
+}

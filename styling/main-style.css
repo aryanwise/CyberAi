@@ -1,0 +1,177 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #f8f9fa; */
+    background-color: #333;
+    color: white;
+}
+
+header nav img {
+    max-height: 50px;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-links li {
+    margin: 0 15px;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hide the hamburger menu by default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+}
+
+.intro {
+    padding: 20px;
+    background-color: #e9ecef;
+}
+
+.service-start {
+    display: flex;
+    align-items: center;
+    /* Vertically align items */
+    gap: 10px;
+    /* Space between button and text */
+}
+
+.service-line {
+    font-size: 16px;
+    /* Adjust font size to match button text size */
+}
+
+.register-btn {
+    font-size: 16px;
+    /* Ensure button text size is appropriate */
+}
+
+.bot {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.register-btn,
+.service-btn {
+    margin-top: 10px;
+}
+
+.service-btn button {
+    background-color: #007bff;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.service-btn button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* text-decoration: none; */
+    /* Subtle shadow on hover */
+}
+
+.service-btn button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* .service-btn button a:hover {
+    text-decoration: underline;
+} */
+
+.service-btn {
+    display: inline-block;
+    /* margin: 10px 0; */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.media,
+.footer-info,
+.enquiry {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-info li a {
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+    margin-top: 10px;
+    width: 100%;
+}

@@ -1,0 +1,117 @@
+/* Styling the container */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    /* Make height auto to adjust according to content */
+    min-height: 300px;
+    /* Minimum height for consistency */
+    background-color: #8f8f8f;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+.service-font {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* Aligning and spacing the buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    /* Distribute space between buttons */
+    align-items: center;
+    /* Align buttons vertically */
+    width: 100%;
+    /* Full width to ensure spacing works */
+    max-width: 300px;
+    /* Limit maximum width to keep buttons together */
+    margin-top: 20px;
+}
+
+.learnmore-button,
+.buy-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 140px;
+    /* Set equal width for both buttons */
+    text-align: center;
+    text-decoration: none;
+}
+
+.learnmore-button:hover,
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+/* Custom Carousel Styles */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+/* Custom arrow styles */
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    /* content: ''; */
+    /* Clear any default content */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-right: 3px solid lightgray;
+    /* Light gray arrow */
+    border-bottom: 3px solid lightgray;
+    /* Light gray arrow */
+    position: absolute;
+    transition: border-color 0.3s ease;
+    /* Smooth color transition */
+}
+
+/* Rotate to create the left and right arrows */
+.carousel-control-prev-icon::before {
+    transform: rotate(135deg);
+    /* Left-pointing arrow */
+}
+
+.carousel-control-next-icon::before {
+    transform: rotate(-45deg);
+    /* Right-pointing arrow */
+}
+
+/* Hover effect */
+.carousel-control-prev-icon:hover::before,
+.carousel-control-next-icon:hover::before {
+    border-right-color: darkgray;
+    /* Dark gray arrow on hover */
+    border-bottom-color: darkgray;
+    /* Dark gray arrow on hover */
+}
+
+/* Style the entire button */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensuring smooth transitions */
+.carousel-item {
+    transition: opacity 0.75s ease-in-out;
+}

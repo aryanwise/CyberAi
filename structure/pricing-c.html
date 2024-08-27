@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styling/individual-pricing.css">
+    <link rel="stylesheet" href="/styling/responsive.css">
+    <title>Pricing C</title>
+</head>
+
+<body>
+    <h1>SERVICE C PRICING</h1>
+    <div class="container">
+        <div class="pricing-container">
+            <div class="pricing-plan">
+                <h2>Basic Plan</h2>
+                <p>$9.99 / month</p>
+                <p>Includes basic features for individuals.</p>
+                <button onclick="showRegisterForm('Basic Plan')">Select Plan</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>Pro Plan</h2>
+                <p>$19.99 / month</p>
+                <p>Advanced features for professionals.</p>
+                <button onclick="showRegisterForm('Pro Plan')">Select Plan</button>
+            </div>
+            <div class="pricing-plan">
+                <h2>Enterprise Plan</h2>
+                <p>$49.99 / month</p>
+                <p>Full suite of features for enterprises.</p>
+                <button onclick="showRegisterForm('Enterprise Plan')">Select Plan</button>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div id="registerForm" class="register-form-container">
+            <h3>Enter your details to get the payment link</h3>
+            <form id="registrationForm">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="/script/pricing.js"></script>
+</body>
+
+</html>

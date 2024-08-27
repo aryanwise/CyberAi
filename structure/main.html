@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name</title>
+    <link rel="stylesheet" href="/styling/main-style.css">
+    <link rel="stylesheet" href="/styling/responsive.css">
+    <link rel="stylesheet" href="/styling/chatbot.css">
+    <link rel="stylesheet" href="/styling/main-body.css">
+    <link rel="stylesheet" href="/styling/individual-pricing.css">
+    <link rel="stylesheet" href="/styling/service-message.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="head">
+            <img src="" alt="Company Logo">
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Unicode character for the hamburger icon -->
+            </div>
+            <ul class="head-topic" id="nav-links">
+                <li><a href="/structure/about.html">About</a></li>
+                <!-- making an informative about page of Aryan and Jalol -->
+                <li><a href="/structure/contact.html">Contact</a></li> <!-- making contact information page -->
+                <li><a href="/structure/services.html">Services</a></li> <!-- making our service page -->
+                <li><a href="/structure/main-pricing.html">Pricing</a></li> <!-- making pricing page -->
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="intro">
+            <h1>Welcome to Our Company</h1>
+            <p>We offer a wide range of Security and AI services tailored to your needs.</p>
+        </div>
+        <br>
+        <div class="main-services">
+            <!-- making a crousel button for the services which will include the inspiration from apple website -->
+            <div id="serviceCarouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="service-container service-1">
+                            <h1>Service A</h1>
+                            <p class="service-font">Our Service A is about...</p>
+                            <div class="button-group">
+                                <a href="/structure/learnmore-a.html" class="buy-button">Learn More</a>
+                                <a href="/structure/pricing-a.html" class="buy-button">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-container service-2">
+                            <h1>Service B</h1>
+                            <p class="service-font">Our Service B is about...</p>
+                            <div class="button-group">
+                                <a href="/structure/learnmore-b.html" class="buy-button">Learn More</a>
+                                <a href="/structure/pricing-b.html" class="buy-button">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="service-container service-3">
+                            <h1>Service C</h1>
+                            <p class="service-font">Our Service C is about...</p>
+                            <div class="button-group">
+                                <a href="/structure/learnmore-c.html" class="buy-button">Learn More</a>
+                                <a href="/structure/pricing-c.html" class="buy-button">Buy</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarouselFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#serviceCarouselFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <br>
+            <h3>Additional Information</h3>
+            <div class="more-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus ratione repellat
+                est quas esse rerum eum quasi porro necessitatibus? Nisi dicta minus numquam deserunt. Sint, fuga id
+                iste voluptas magni nam, tenetur autem nemo rem earum amet obcaecati cum sit officia modi dignissimos
+                minima quibusdam eius quod explicabo laboriosam nihil nobis adipisci ut? Esse voluptatum, vel iusto
+                obcaecati ratione quibusdam dolore quasi. Corporis praesentium totam consectetur modi ipsum, minus iure
+                unde quod quibusdam nam dolor et dolorum quia suscipit distinctio esse incidunt, laboriosam facilis.
+                Eligendi repudiandae quaerat dicta placeat dolores repellendus sequi, veritatis id accusamus, ratione
+                corrupti in optio veniam!</div> <!-- more on this later -->
+            <br><br><br><br><br><br>
+            <!-- <div class="bot">
+            <div class="question">Having Doubts?</div>
+            <h5>Chat with us</h5>
+            <p>Ask us anything about our services!</p>
+            <input type="text" class="form-control" placeholder="Type your message...">
+            <div class="back-btn">Back</div>
+        </div> -->
+            <!-- Chatbot Button -->
+            <div class="chatbot-button" id="chatbotButton">Having Doubts?</div>
+
+            <!-- Chatbot Window -->
+            <div class="chatbot-window" id="chatbotWindow" style="display: none;">
+                <div class="chatbot-header">
+                    <span>Chat with us</span>
+                    <!-- <button id="closeChatbot">X</button> -->
+                </div>
+                <div class="chatbot-messages" id="chatbotMessages">
+                    <div class="message bot-message">Hi! How can I assist you today?</div>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="userInput" placeholder="Type your question...">
+                    <button id="sendMessage">Send</button>
+                </div>
+            </div>
+
+            <!-- making a chatbot for asking general question about our service and what suits best for our customers ->at the right side of our site -->
+    </main>
+    <footer>
+
+        <div class="footer-content">
+            <div class="media">
+                <p>Follow us on our social media handles</p>
+                <!-- Insert social media handles -->
+            </div>
+            <div class="footer-info">
+                <li><a href="/structure/about.html">About</a></li>
+                <li><a href="/structure/contact.html">Contact</a></li>
+                <li><a href="/structure/services.html">Services</a></li>
+                <li><a href="/structure/main-pricing.html">Pricing</a></li>
+            </div>
+            <div class="enquiry">
+                <!-- if the customers still faces issues or need guidance they will be able to contact ous on our [company@mail]s -->
+                <p>If you still have issues or need guidance,
+                    <br>contact us at <b>
+                        <<a style="text-decoration:none; color:#000;" href="mailto:company@mail">company@mail</a>>
+                    </b>
+                </p>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            Companyname&#169;2024
+        </div> -->
+
+    </footer>
+
+    <!-- Bootstrap and JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/script/header.js"></script>
+    <script src="/script/register.js"></script>
+    <script src="/script/chatbot.js"></script>
+</body>
+
+</html>
